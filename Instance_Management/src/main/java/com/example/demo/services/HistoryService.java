@@ -9,11 +9,14 @@ import org.springframework.stereotype.Service;
 import com.example.demo.Repository.HistoryRepository;
 import com.example.demo.model.History;
 import com.example.demo.model.Instances;
+
+import ServiceInterface.HistoryInterface;
+
 import java.time.LocalDateTime;  
 import java.time.format.DateTimeFormatter;  
 
 @Service
-public class HistoryService {
+public class HistoryService implements HistoryInterface{
 	@Autowired
 	private HistoryRepository repo;
 public List<History> getAllHistory(){

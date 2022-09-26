@@ -15,8 +15,10 @@ import com.example.demo.model.Employee;
 import com.example.demo.model.Instances;
 import com.example.demo.model.Teams;
 
+import ServiceInterface.TeamsInterface;
+
 @Service
-public class TeamServices {
+public class TeamServices implements TeamsInterface{
 	
 	@Autowired
 	private TeamRepository repo;

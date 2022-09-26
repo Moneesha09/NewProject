@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.Repository.EmployeeRepository;
 import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.model.Employee;
+
+import ServiceInterface.EmployeeInterface;
 @Service
-public class EmployeeService {
+public class EmployeeService implements EmployeeInterface{
 	@Autowired
 	public EmployeeRepository repos;
 	

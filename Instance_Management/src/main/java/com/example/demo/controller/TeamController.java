@@ -18,7 +18,7 @@ import com.example.demo.services.TeamServices;
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 public class TeamController {
-	;
+	
 	@Autowired
 	private TeamServices repo;
 	@GetMapping("/teams")
