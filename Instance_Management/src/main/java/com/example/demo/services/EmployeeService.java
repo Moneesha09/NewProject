@@ -9,10 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 import com.example.demo.Repository.EmployeeRepository;
+import com.example.demo.ServiceInterface.EmployeeInterface;
 import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.model.Employee;
-
-import ServiceInterface.EmployeeInterface;
 @Service
 public class EmployeeService implements EmployeeInterface{
 	@Autowired

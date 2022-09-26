@@ -1,4 +1,4 @@
-package ServiceInterface;
+package com.example.demo.ServiceInterface;
 
 import java.util.List;
 import java.util.Map;
